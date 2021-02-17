@@ -1,0 +1,19 @@
+{
+  "name": "harsh",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "set NODE_TLS_REJECT_UNAUTHORIZED='0' &&  nodemon ./index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-form-data": "^2.0.14",
+    "nodemailer": "^6.4.18",
+    "nodemon": "^2.0.7"
+  }
+}
