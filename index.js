@@ -1,7 +1,6 @@
 import nodemailer from "nodemailer";
 import express from "express";
 import formData from "express-form-data";
-
 const app = express();
 // app.use(formData.parse({}));
 
@@ -12,7 +11,7 @@ app.use(
   })
 ); //for data like form in html page
 // app.use()
-app.post("/", async (req, res) => {
+app.post("/enquiry", async (req, res) => {
   let query = req;
   const {
     contact_name,
@@ -21,42 +20,45 @@ app.post("/", async (req, res) => {
     contact_message,
   } = query.body;
   const response = await sendMail({
-    to: contact_email,
+    to: "abc@gmail.com",
     subject: contact_subject,
-    body: `HI! ${contact_name} ,
+    body: `HI! ${contact_name} , Email ${contact_email}
     ${contact_message}`,
   });
-  //   console.log(query.body);
+  console.log(query.body);
 
   res.json({ ok: "ok", response });
 });
 
-const port = process.env.PORT || 3000;
+app.post("/", async (req, res) => {
+  const response = await sendMail({
+    to: "abc@gmail.com",
+    subject: "Enquiry ",
+    body: JSON.stringify(req.body),
+  });
+  console.log(req.body);
+  res.json({ ok: "ok", b: req.body });
+});
+
+const port = process.env.PORT || 3000; //creating a server
+
 app.listen(port, () => console.log(`listening on port ${port} `));
 
 async function sendMail({ to, cc, bcc, subject, body }) {
   try {
-    //   const transporter = nodemailer.createTransport({
-    //     host: "smtp.gmail.com",
-    //     port: 587,
-    //     secure: false, // true for 465, false for other ports
-    //     auth: {
-    //       user: "abc@gmail.com",
-    //       pass: "asdsda",
-    //     },
-    //   });
-
     const transporter = nodemailer.createTransport({
-      host: "smtp.ethereal.email",
+      host: "smtp.gmail.com",
       port: 587,
+      secure: false, // true for 465, false for other ports
       auth: {
-        user: "ted.morar12@ethereal.email",
-        pass: "CrPJMnbTxTxCZ5tdpM",
+        user: "abc@gmail.com",
+        pass: "xxx",
       },
     });
+
     const message = {
-      from: `"ABC" <${"ted.morar12@ethereal.email"}>`, // sender address
-      to, // list of receivers
+      from: `"jwalatravels" <${"abc@gmail.com"}>`, // sender address
+      to,
       cc,
       bcc,
       subject,
