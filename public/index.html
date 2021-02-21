@@ -27,12 +27,12 @@
                         
                         <nav class="navbar navbar-expand-lg navbar-light">
                             <a class="navbar-brand mr-auto" href="#">
-                                <img src='../img/jwt.jpg' alt="logo">
+                                <img src="img/jwt.jpg" alt="logo">
                             </a>
                             <button type="button" id="nav-toggle" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
-                            <div id="mainNav" class="collapse navbar-collapse tm-bg-white">
+                           
                                 <ul class="navbar-nav mr-auto">
                                   <li class="nav-item">
                                     <a class="nav-link" href="#tm-section-1">Home</a>
@@ -149,31 +149,27 @@
                                       </div>
                                 </form> -->
 
-                                <form action="/book" method="post" class="tm-search-form tm-section-pad-2">
+                                <form action="http://localhost:5500" method="post" class="tm-search-form tm-section-pad-2">
                                     <div class="form-row tm-search-form-row">
                                         <div class="form-group tm-form-element tm-form-element-100">
                                             <i class="fa fa-map-marker fa-2x tm-form-element-icon"></i>
-                                            <input name="city" type="text" class="form-control" id="inputCity"
-                                                placeholder="Type your Current Location...">
+                                            <input name="city" type="text" class="form-control" id="inputCity" placeholder="Type your Current Location...">
                                         </div>
                                         <div class="form-group tm-form-element tm-form-element-100">
                                             <i class="fa fa-map-marker fa-2x tm-form-element-icon"></i>
-                                            <input name="city" type="text" class="form-control" id="inputCity"
-                                                placeholder="Type your destination...">
+                                            <input name="city" type="text" class="form-control" id="inputCity" placeholder="Type your destination...">
                                         </div>
                                         <div class="form-group tm-form-element tm-form-element-50">
                                             <i class="fa fa-calendar fa-2x tm-form-element-icon"></i>
-                                            <input name="check-in" type="date" class="form-control" id="inputCheckIn"
-                                                placeholder="Pick up date">
+                                            <input name="check-in" type="text" class="form-control" id="inputCheckIn" placeholder="Pick up date">
                                         </div>
                                         <div class="form-group tm-form-element tm-form-element-50">
                                             <i class="fa fa-calendar fa-2x tm-form-element-icon"></i>
-                                            <input name="check-out" type="date" class="form-control" id="inputCheckOut"
-                                                placeholder="Drop Date">
+                                            <input name="check-out" type="text" class="form-control" id="inputCheckOut" placeholder="Drop Date">
                                         </div>
                                     </div>
                                     <div class="form-row tm-search-form-row">
-                                        <div class="form-group tm-form-element tm-form-element-2">
+                                        <div class="form-group tm-form-element tm-form-element-2">                                            
                                             <select name="adult" class="form-control tm-select" id="Adult">
                                                 <option value="">Adult</option>
                                                 <option value="1">1</option>
@@ -189,7 +185,7 @@
                                             </select>
                                             <i class="fa fa-2x fa-user tm-form-element-icon"></i>
                                         </div>
-                                        <div class="form-group tm-form-element tm-form-element-2">
+                                        <div class="form-group tm-form-element tm-form-element-2">                                            
                                             <select name="children" class="form-control tm-select" id="children">
                                                 <option value="">Children</option>
                                                 <option value="0">0</option>
@@ -218,31 +214,25 @@
                                         </div>
                                         <div class="form-group tm-form-element tm-form-element-100">
                                             <i class="fa fa-user tm-form-element-icon tm-form-element-icon-small"></i>
-                                            <input name="Your Name" type="text" class="form-control" id="inputName"
-                                                placeholder="Full Name">
+                                            <input name="Your Name" type="text" class="form-control" id="inputName" placeholder="Full Name">
                                         </div>
                                         <div class="form-group tm-form-element tm-form-element-100">
                                             <i class="fa fa-phone tm-form-element-icon tm-form-element-icon-phone"></i>
-                                            <input name="Your Contact Number" type="text" class="form-control"
-                                                id="inputName" placeholder="Your Contact Number">
+                                            <input name="Your Contact Number" type="text" class="form-control" id="inputName" placeholder="Your Contact Number">
                                         </div>
                                         <div class="form-group tm-form-element tm-form-element-100">
-                                            <i
-                                                class="fa fa-envelope tm-form-element-icon tm-form-element-icon-phone"></i>
-                                            <input name="Your Email Address" type="text" class="form-control"
-                                                id="inputName" placeholder="Your Email Address">
+                                            <i class="fa fa-envelope tm-form-element-icon tm-form-element-icon-phone"></i>
+                                            <input name="Your Email Address" type="text" class="form-control" id="inputName" placeholder="Your Email Address">
                                         </div>
                                         <div class="form-group tm-form-element tm-form-element-2">
                                             <button type="submit" class="btn btn-primary tm-btn-search">Submit</button>
                                         </div>
-                                    </div>
-                                    <div class="form-row clearfix pl-2 pr-2 tm-fx-col-xs">
-                                        <p class="tm-margin-b-0">Thank you so much for choosing us.</p>
-                                        <a href="#"
-                                            class="ie-10-ml-auto ml-auto mt-1 tm-font-semibold tm-color-primary">Need
-                                            Help?</a>
-                                    </div>
-                                </form>
+                                      </div>
+                                      <div class="form-row clearfix pl-2 pr-2 tm-fx-col-xs">
+                                          <p class="tm-margin-b-0">Thank you so much for choosing us.</p>
+                                          <a href="#contactus" class="ie-10-ml-auto ml-auto mt-1 tm-font-semibold tm-color-primary">Need Help?</a>
+                                      </div>
+                                  </form>
                             </div>                        
                         </div>      
                     </div>
@@ -306,19 +296,19 @@ Jwala Tour & Travels has full accreditation with the Airlines Reporting Corporat
                             <h3 class="tm-color-primary tm-article-title-1">Book Your Car</h3>
 
                             <p>One feature that serves car rental sites is allowing bookings in real time as well as for advanced time periods. Depicting the availability of the various cars on a monthly interface can help users select their preferences from the pool and reserve dates easily.</p>
-                            <a href="#" class="text-uppercase tm-color-primary tm-font-semibold">Contact us...</a>
+                            <a href="#contactus" class="text-uppercase tm-color-primary tm-font-semibold">Contact us...</a>
                         </article>
                         <article class="col-sm-12 col-md-3 col-lg-3 col-xl-3 tm-article">                            
                             <i class="fa tm-fa-6x fa-train tm-color-primary tm-margin-b-20"></i>
                             <h3 class="tm-color-primary tm-article-title-1">Book Your Train</h3>
                             <p>Our life is a constant journey, from birth to death. The landscape changes, the people change, our needs change, but the train keeps moving. Life is the train, not the station.So just go and book your journey.</p>
-                            <a href="#" class="text-uppercase tm-color-primary tm-font-semibold">Contact us...</a>                            
+                            <a href="#contactus" class="text-uppercase tm-color-primary tm-font-semibold">Contact us...</a>                            
                         </article>
                         <article class="col-sm-12 col-md-3 col-lg-3 col-xl-3 tm-article">                           
                             <i class="fa tm-fa-6x fa-plane tm-color-primary tm-margin-b-20"></i>
                             <h3 class="tm-color-primary tm-article-title-1">Book Your Flight</h3>
                             <p> Adventure is worthwhile. Whenever you go becomes part of you. To fly we have to have resistance. The feeling you get when you see a plane. We have nothing to lose and a world to see. Love at first flight. Investment in travel is an investment in yourself.</p>
-                            <a href="#" class="text-uppercase tm-color-primary tm-font-semibold">Contact us...</a>                           
+                            <a href="#contactus" class="text-uppercase tm-color-primary tm-font-semibold">Contact us...</a>                           
                         </article>
                         <article class="col-sm-12 col-md-3 col-lg-3 col-xl-3 tm-article">                           
                             <i class="fa tm-fa-6x fa-bus tm-color-primary tm-margin-b-20"></i>
@@ -328,7 +318,7 @@ Jwala Tour & Travels has full accreditation with the Airlines Reporting Corporat
                                 We meet people along our way of which some are strangers, some friends and some strangers yet to be friends.
                                 There are stops at intervals and people board in.
                                 At times some of these people make their presence felt, leave an impact through their grace and beauty on us fellow passengers while on other occasions they remain indifferent.So, come together and enjot the life just book a bus & enjoy the bus trip.</p>
-                            <a href="#" class="text-uppercase tm-color-primary tm-font-semibold">Contact us...</a>                           
+                            <a href="#contactus" class="text-uppercase tm-color-primary tm-font-semibold">Contact us...</a>                           
                         </article>
                     </div>        
                 </div>
@@ -350,8 +340,7 @@ Jwala Tour & Travels has full accreditation with the Airlines Reporting Corporat
                                     <img src="img/img-02.jpg" alt="Image" class="img-fluid">
                                     <div class="tm-article-pad">
                                         <header><h3 class="text-uppercase tm-article-title-2">Expose Yourself to new culture</h3></header>
-                                        <p>Travelling is part of human life and all of us move from one
-                                             place to another for some reasons. All of us travel for business, for sight-seeing and for necessity. Many people considerthat they must spend time in tourist places in summer or winter vacation. It is highly important to visit many places in India and even in the world andcome to know about different cultures.</p>
+                                        <p>Travelling is part of human life and all of us move from one place to another for some reasons. All of us travel for business, for sight-seeing and for necessity. Many people considerthat they must spend time in tourist places in summer or winter vacation. It is highly important to visit many places in India and even in the world andcome to know about different cultures.Away from all the noise of wedding planning and the pressures of work, able to listen to your own wants and needs.“Traveling allowed you the time and space to re-evaluate your life and find the strength to make big change,Travel can give you perspective and the courage to regain control of your life. “The ability to step outside your current surroundings - be it a day trip upstate or a flight across the world - can offer a fresh look on things back.</p>
                                         <a href="#" class="text-uppercase btn-primary tm-btn-primary">Book Now</a>
                                     </div>                                
                                 </article>
@@ -364,6 +353,10 @@ Jwala Tour & Travels has full accreditation with the Airlines Reporting Corporat
                                             one place to another for some reasons. All of us travel for business, for sight-seeing and for necessity.
                                             Many people considerthat they must spend time in tourist places in summer or winter vacation. It is highly important to visit 
                                             many places in India and even in the world andcome to know about different cultures.
+                                            “Taking an unexpected break from travel has reminded us how much we enjoy visiting new destinations and trying new cuisines.
+                                            Add flavours in your life at each and every stage of life.
+                                            As much as we live for travel, it’s easy to forget that travel doesn’t just mean jet planes and cruise boats. Exploring our backyard here india or any country has been a joy, rediscovering old haunts and unearthing new favourites.
+                                            So just increase the size of your palatte and try to full fill your life with full of adventure.
                                         </p>
                                         <a href="#" class="text-uppercase btn-primary tm-btn-primary">Book Now</a>
                                     </div>                                
@@ -373,8 +366,7 @@ Jwala Tour & Travels has full accreditation with the Airlines Reporting Corporat
                                     <div class="tm-article-pad">
                                         <header><h3 class="text-uppercase tm-article-title-2">Grow Your Knowledge</h3></header>
                                         <p>Students who make frequent trips to different places in their academic 
-                                            regardless of gender, ethnicity or other demographic factors can perform better in admissions for higher studies.Survey reports indicated that travel makes learning come alive. As a result, children who took educational trips can perform better in class and are significantly more engaged in learning, both in and out of school. Travel during their school years made them more interested in what they were learning in school, making information easier to remember
-                                             and making complementary reading and lectures more interesting and so interesting as to even spark.</p>
+                                            regardless of gender, ethnicity or other demographic factors can perform better in admissions for higher studies.Survey reports indicated that travel makes learning come alive. As a result, children who took educational trips can perform better in class.Travelling gives people the opportunity to detach from their regular life. While travelling, people can be away from routine problems for a few weeks, it can also help them figure things out that they would not have understood. Another great advantage is the relaxation people get in travelling and this time they can grasp better new thingsNew experiences increase people's resourcefulness by living situations that people would never encounter at home. When travelling with friends or family it creates memories for a lifetime. </p>
                                         <a href="#" class="text-uppercase btn-primary tm-btn-primary">Book Now</a>
                                     </div>                                
                                 </article>                    
@@ -505,27 +497,51 @@ Jwala Tour & Travels has full accreditation with the Airlines Reporting Corporat
                             
                                 </form>-->
 
-                                <form action="/enquiry" method="post" class="contact-form">
+                                <form action="http://localhost:3000/enquiry" method="post" class="contact-form">
                                     <div class="form-group">
-                                        <input type="text" id="contact_name" name="contact_name" class="form-control"
-                                            placeholder="Name" required />
+                                      <input
+                                        type="text"
+                                        id="contact_name"
+                                        name="contact_name"
+                                        class="form-control"
+                                        placeholder="Name"
+                                        required
+                                      />
                                     </div>
                                     <div class="form-group">
-                                        <input type="email" id="contact_email" name="contact_email" class="form-control"
-                                            placeholder="Email" required />
+                                      <input
+                                        type="email"
+                                        id="contact_email"
+                                        name="contact_email"
+                                        class="form-control"
+                                        placeholder="Email"
+                                        required
+                                      />
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" id="contact_subject" name="contact_subject" class="form-control"
-                                            placeholder="Subject" required />
+                                      <input
+                                        type="text"
+                                        id="contact_subject"
+                                        name="contact_subject"
+                                        class="form-control"
+                                        placeholder="Subject"
+                                        required
+                                      />
                                     </div>
                                     <div class="form-group">
-                                        <textarea id="contact_message" name="contact_message" class="form-control" rows="9"
-                                            placeholder="Message" required></textarea>
+                                      <textarea
+                                        id="contact_message"
+                                        name="contact_message"
+                                        class="form-control"
+                                        rows="9"
+                                        placeholder="Message"
+                                        required
+                                      ></textarea>
                                     </div>
                                     <button type="submit" class="btn btn-primary tm-btn-primary">
-                                        Send Message Now
+                                      Send Message Now
                                     </button>
-                                </form>
+                                  </form>
 
                                 <p>or</p>
                                     <p>
