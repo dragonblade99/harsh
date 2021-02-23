@@ -64,7 +64,6 @@ p {
 .navbar-brand {
 	font-size: 1.8rem;
 	font-weight: 700;
-	margin-left: -200px;
 }
 .navbar a { color: #19fcf0;
 	text-decoration: #19fcf0;
@@ -129,9 +128,7 @@ p {
 
 #tm-section-1 {	
 	background-image: url('');	
-	color: white;
-	
-	height: 515px;
+	color: white;;
 }
 
 #tm-section-5 { background-image: url('../img/bg-img-2.jpg'); }
@@ -445,7 +442,6 @@ background-image: '../img/cloud.jpg';
 	}
 	#mainNav {
 		width: 180px;
-	    position: absolute;
 	    top: 60px;
 	    
 
